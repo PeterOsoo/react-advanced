@@ -1,13 +1,19 @@
 import React from "react"
 import "./App.css"
 import { State } from "./components/useState/State"
+import { StateArray } from "./components/useState/StateArray"
 
 function App() {
 	return (
-		<div>
-			<h3>react concepts</h3>
-			<State />
-		</div>
+		<React.Fragment>
+			<div className="App">
+				<h1>react concepts</h1>
+				<State />
+			</div>
+			<div>
+				<StateArray />
+			</div>
+		</React.Fragment>
 	)
 }
 
