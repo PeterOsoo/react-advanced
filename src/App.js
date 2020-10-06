@@ -1,9 +1,14 @@
 import React from "react"
-import logo from "./logo.svg"
 import "./App.css"
+import { State } from "./components/useState/State"
 
 function App() {
-	return <h3>react concepts</h3>
+	return (
+		<div>
+			<h3>react concepts</h3>
+			<State />
+		</div>
+	)
 }
 
 export default App
