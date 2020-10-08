@@ -2,6 +2,7 @@ import React from "react"
 import "./App.css"
 import { State } from "./components/useState/State"
 import { StateArray } from "./components/useState/StateArray"
+import { Object } from "./components/useState/Object"
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 			<div>
 				<StateArray />
 			</div>
+			<Object />
 		</React.Fragment>
 	)
 }
