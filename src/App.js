@@ -1,20 +1,22 @@
 import React from "react"
-import "./App.css"
+// import "./App.css"
 import { State } from "./components/useState/State"
 import { StateArray } from "./components/useState/StateArray"
-import { Object } from "./components/useState/Object"
+import Counter from "./components/useState/Counter"
 
 function App() {
 	return (
 		<React.Fragment>
 			<div className="App">
-				<h1>react concepts</h1>
-				<State />
+				<div className="App">
+					<h1>react concepts</h1>
+					<State />
+				</div>
+				<div>
+					<StateArray />
+				</div>
+				<Counter />
 			</div>
-			<div>
-				<StateArray />
-			</div>
-			<Object />
 		</React.Fragment>
 	)
 }
