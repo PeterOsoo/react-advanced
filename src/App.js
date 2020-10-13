@@ -4,6 +4,7 @@ import { State } from "./components/useState/State"
 import { StateArray } from "./components/useState/StateArray"
 import Counter from "./components/useState/Counter"
 import { Basics } from "./components/useEffect/Basics"
+import CleanUp from "./components/useEffect/CleanUp"
 
 function App() {
 	return (
@@ -19,7 +20,8 @@ function App() {
 				<Counter />
 			</div> */}
 
-			<Basics />
+			{/* <Basics /> */}
+			<CleanUp />
 		</React.Fragment>
 	)
 }
