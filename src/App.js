@@ -1,10 +1,11 @@
 import React from "react"
-// import "./App.css"
+import "./App.css"
 import { State } from "./components/useState/State"
 import { StateArray } from "./components/useState/StateArray"
 import Counter from "./components/useState/Counter"
 import { Basics } from "./components/useEffect/Basics"
 import CleanUp from "./components/useEffect/CleanUp"
+import { FetchData } from "./components/useEffect/FetchData"
 
 function App() {
 	return (
@@ -21,7 +22,8 @@ function App() {
 			</div> */}
 
 			{/* <Basics /> */}
-			<CleanUp />
+			{/* <CleanUp /> */}
+			<FetchData />
 		</React.Fragment>
 	)
 }
