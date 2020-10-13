@@ -3,11 +3,12 @@ import React from "react"
 import { State } from "./components/useState/State"
 import { StateArray } from "./components/useState/StateArray"
 import Counter from "./components/useState/Counter"
+import { Basics } from "./components/useEffect/Basics"
 
 function App() {
 	return (
 		<React.Fragment>
-			<div className="App">
+			{/* <div className="App">
 				<div className="App">
 					<h1>react concepts</h1>
 					<State />
@@ -16,7 +17,9 @@ function App() {
 					<StateArray />
 				</div>
 				<Counter />
-			</div>
+			</div> */}
+
+			<Basics />
 		</React.Fragment>
 	)
 }
