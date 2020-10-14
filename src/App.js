@@ -6,6 +6,7 @@ import Counter from "./components/useState/Counter"
 import { Basics } from "./components/useEffect/Basics"
 import CleanUp from "./components/useEffect/CleanUp"
 import { FetchData } from "./components/useEffect/FetchData"
+import MultipleReturnsBasic from "./components/Conditional Rendering/MultipleReturnsBasic"
 
 function App() {
 	return (
@@ -23,7 +24,8 @@ function App() {
 
 			{/* <Basics /> */}
 			{/* <CleanUp /> */}
-			<FetchData />
+			{/* <FetchData /> */}
+			<MultipleReturnsBasic />
 		</React.Fragment>
 	)
 }
