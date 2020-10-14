@@ -7,6 +7,7 @@ import { Basics } from "./components/useEffect/Basics"
 import CleanUp from "./components/useEffect/CleanUp"
 import { FetchData } from "./components/useEffect/FetchData"
 import MultipleReturnsBasic from "./components/Conditional Rendering/MultipleReturnsBasic"
+import MultipleReturnsData from "./components/Conditional Rendering/MultipleReturnsData"
 
 function App() {
 	return (
@@ -25,7 +26,10 @@ function App() {
 			{/* <Basics /> */}
 			{/* <CleanUp /> */}
 			{/* <FetchData /> */}
+
+			{/* conditionals  */}
 			<MultipleReturnsBasic />
+			<MultipleReturnsData />
 		</React.Fragment>
 	)
 }
