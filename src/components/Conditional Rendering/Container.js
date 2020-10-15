@@ -2,6 +2,7 @@ import React from "react"
 import MultipleReturnsBasic from "./MultipleReturnsBasic"
 import MultipleReturnsData from "./MultipleReturnsData"
 import ShortCircuit from "./ShortCircuit"
+import ShowHide from "./ShowHide"
 
 function Container() {
 	return (
@@ -9,6 +10,7 @@ function Container() {
 			<MultipleReturnsBasic />
 			<MultipleReturnsData />
 			<ShortCircuit />
+			<ShowHide />
 		</div>
 	)
 }
