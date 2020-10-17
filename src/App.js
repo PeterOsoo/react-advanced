@@ -9,6 +9,8 @@ import { FetchData } from "./components/useEffect/FetchData"
 
 import Container from "./components/Conditional Rendering/Container"
 
+import FormContainer from "./components/Forms/FormContainer"
+
 function App() {
 	return (
 		<React.Fragment>
@@ -31,6 +33,8 @@ function App() {
 				{/* conditionals  */}
 
 				<Container />
+
+				<FormContainer />
 			</div>
 		</React.Fragment>
 	)
