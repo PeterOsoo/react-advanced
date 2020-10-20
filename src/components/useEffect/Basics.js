@@ -18,10 +18,14 @@ export const Basics = () => {
 	console.log("render component")
 	return (
 		<>
-			<h1>{value}</h1>
-			<button className="btn" onClick={() => setValue(value + 1)}>
-				click me
-			</button>
+			<div className="effect">
+				<h3>1. Basic UseEfect Counter </h3>
+				<p>updates document title on re-render when count is greater than 1</p>
+				<h1>{value}</h1>
+				<button className="btn" onClick={() => setValue(value + 1)}>
+					click me
+				</button>
+			</div>
 		</>
 	)
 }

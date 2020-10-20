@@ -25,8 +25,17 @@ const CleanUp = () => {
 	console.log("render")
 	return (
 		<>
-			<h1>window</h1>
-			<h2>{size} PX</h2>
+			<div className="effect">
+				<h3>2. cleanup function</h3>
+				<p>
+					useEffect hook to change to display the size of screen width in pixels
+					after every resize of page{" "}
+				</p>
+				<p>Implenments cleanup function in UseEffect hook</p>
+				<h3> window size </h3>
+
+				<h2>{size} PX</h2>
+			</div>
 		</>
 	)
 }
