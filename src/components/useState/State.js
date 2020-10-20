@@ -14,11 +14,17 @@ export const State = () => {
 
 	return (
 		<React.Fragment>
-			<h2>UseState - Basics</h2>
-			<h3>{text}</h3>
-			<button type="button" className="btn" onClick={handleClick}>
-				change name
-			</button>
+			<div className="state">
+				<h3> 1. change name on button click </h3>
+				<h3>{text}</h3>
+				<p>CLick button below to change name </p>
+				<button type="button" className="btn" onClick={handleClick}>
+					change name
+				</button>
+				<br />
+				<br />
+				<br />
+			</div>
 		</React.Fragment>
 	)
 }

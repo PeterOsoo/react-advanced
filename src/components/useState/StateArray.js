@@ -10,8 +10,12 @@ export const StateArray = () => {
 	}
 
 	return (
-		<div>
-			<h3>UseState - Array </h3>
+		<div className="state">
+			<h3>2. UseState - Array </h3>
+			<p>
+				Clear list functionality. Clear specific item from list and all items on
+				list
+			</p>
 			{people.map(person => {
 				const { id, name } = person
 				return (
@@ -25,6 +29,9 @@ export const StateArray = () => {
 			<button className="btn" onClick={() => setPeople([])}>
 				clear items
 			</button>
+			<br />
+			<br />
+			<br />
 		</div>
 	)
 }

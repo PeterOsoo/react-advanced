@@ -19,7 +19,8 @@ const Counter = () => {
 	return (
 		<>
 			<section style={{ margin: "4rem 0" }}>
-				<h2>regular counter</h2>
+				<h3>3. Implementing a Counter </h3>
+				<h4>regular counter</h4>
 				<h1>{value}</h1>
 				<button className="btn" onClick={() => setValue(value - 1)}>
 					decrease
@@ -32,7 +33,9 @@ const Counter = () => {
 				</button>
 			</section>
 			<section style={{ margin: "4rem 0" }}>
-				<h2>more complex counter</h2>
+				<h4>more complex counter</h4>
+				<p>counter who's value increases after a specific period of time.</p>
+				<p>Using setTimeout</p>
 				<h1>{value}</h1>
 				<button className="btn" onClick={complexIncrease}>
 					increase later
