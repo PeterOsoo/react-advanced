@@ -1,10 +1,13 @@
 import React from "react"
+
+import "./conditionals.css"
+
 import MultipleReturnsBasic from "./MultipleReturnsBasic"
 import MultipleReturnsData from "./MultipleReturnsData"
 import ShortCircuit from "./ShortCircuit"
 import ShowHide from "./ShowHide"
 
-function Container() {
+const Container = () => {
 	return (
 		<div>
 			<MultipleReturnsBasic />

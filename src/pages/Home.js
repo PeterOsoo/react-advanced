@@ -1,0 +1,22 @@
+import React from "react"
+
+import { Link } from "react-router-dom"
+
+const Home = () => {
+	return (
+		<div>
+			<h1>Home page</h1>
+
+			<Link to="/use-state">Use State </Link>
+			<br />
+			<br />
+			<br />
+			<Link to="/use-effect">Use Effect </Link>
+			<br />
+			<br />
+			<Link to="/conditionals">Conditionals </Link>
+		</div>
+	)
+}
+
+export default Home

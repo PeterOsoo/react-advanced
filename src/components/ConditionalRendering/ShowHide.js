@@ -4,10 +4,18 @@ const ShowHide = () => {
 	const [show, setShow] = useState(false)
 	return (
 		<>
+			<h3>Show and Hide Component</h3>
 			<button className="btn" onClick={() => setShow(!show)}>
 				show/hide
 			</button>
 			{show && <Item />}
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
 		</>
 	)
 }

@@ -1,10 +1,12 @@
 import React from "react"
 import "./App.css"
 
+import Home from "./pages/Home"
+
 import UseStateContainer from "./components/useState/UseStateContainer"
 import UseEffectContainer from "./components/useEffect/UseEffectContainer"
 
-import Container from "./components/Conditional Rendering/Container"
+import ConditionalsContainer from "./components/ConditionalRendering/ConditionalsContainer"
 
 import FormContainer from "./components/Forms/FormContainer"
 
@@ -15,18 +17,16 @@ function App() {
 		<React.Fragment>
 			<div className="App">
 				<Switch>
-					<Route path="/" exact>
-						{" "}
-						Home{" "}
-					</Route>
+					<Route path="/" exact component={Home} />
 
 					<Route path="/use-state" exact component={UseStateContainer} />
 
 					<Route path="/use-effect" exact component={UseEffectContainer} />
 
+					<Route path="/conditionals" exact component={ConditionalsContainer} />
+
 					{/* <Route component={Error} /> */}
 				</Switch>
-
 				{/* conditionals  */}
 
 				{/* <Container />
