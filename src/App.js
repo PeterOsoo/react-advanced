@@ -25,13 +25,10 @@ function App() {
 
 					<Route path="/conditionals" exact component={ConditionalsContainer} />
 
+					<Route path="/forms" exact component={FormContainer} />
+
 					{/* <Route component={Error} /> */}
 				</Switch>
-				{/* conditionals  */}
-
-				{/* <Container />
-
-				<FormContainer /> */}
 			</div>
 		</React.Fragment>
 	)

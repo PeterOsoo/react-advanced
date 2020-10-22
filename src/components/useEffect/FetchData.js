@@ -30,7 +30,7 @@ export const FetchData = () => {
 
 							<div>
 								<h4>{login}</h4>
-								<a target="_blank" href={html_url}>
+								<a target="_blank" rel="noopener noreferrer" href={html_url}>
 									profile
 								</a>
 							</div>
