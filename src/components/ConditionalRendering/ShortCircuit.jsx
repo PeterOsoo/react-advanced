@@ -16,7 +16,7 @@ const ShortCircuit = () => {
       <h1>value : {secondValue}</h1> */}
       {/* {if(){console.log('hello world')}} */}
 
-      <h3>Short Circuit</h3>
+      <h3>3. Short Circuit</h3>
       <p>use of and ,  or  </p>
 
       <h3>{text || 'john doe'}</h3>
@@ -26,7 +26,7 @@ const ShortCircuit = () => {
      </div>
      <div className="conditionals">
 
-     <h3>Toggle button to turn error on and off using short Circuit Operator</h3>
+     <h3>4. Toggle button to turn error on and off using short Circuit Operator</h3>
 
       <button className='btn' onClick={() => setIsError(!isError)}>
         toggle error

@@ -14,7 +14,12 @@ const Home = () => {
 			<Link to="/use-effect">Use Effect </Link>
 			<br />
 			<br />
+			<br />
 			<Link to="/conditionals">Conditionals </Link>
+			<br />
+			<br />
+			<br />
+			<Link to="/forms">Forms </Link>
 		</div>
 	)
 }

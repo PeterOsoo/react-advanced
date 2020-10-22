@@ -32,7 +32,7 @@ const MultipleReturnsData = () => {
 	if (isLoading) {
 		return (
 			<div className="conditionals">
-				<h3>Multiple Returns Data </h3>
+				<h3> 2. Multiple Returns Data </h3>
 				<h3>Loading...</h3>
 			</div>
 		)
@@ -41,7 +41,7 @@ const MultipleReturnsData = () => {
 	if (isError) {
 		return (
 			<div className="conditionals">
-				<h3>Multiple Returns Data </h3>
+				<h3>2. Multiple Returns Data </h3>
 				<h3>Something went wrong....</h3>
 			</div>
 		)
@@ -49,7 +49,7 @@ const MultipleReturnsData = () => {
 
 	return (
 		<div className="conditionals">
-			<h3>Multiple Returns Data </h3>
+			<h3>2. Multiple Returns Data </h3>
 			<h3>{user}</h3>
 		</div>
 	)

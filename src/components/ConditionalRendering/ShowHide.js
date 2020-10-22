@@ -4,7 +4,7 @@ const ShowHide = () => {
 	const [show, setShow] = useState(false)
 	return (
 		<>
-			<h3>Show and Hide Component</h3>
+			<h3>5. Show and Hide Component</h3>
 			<button className="btn" onClick={() => setShow(!show)}>
 				show/hide
 			</button>
