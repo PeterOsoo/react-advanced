@@ -10,6 +10,8 @@ import ConditionalsContainer from "./components/ConditionalRendering/Conditional
 
 import FormContainer from "./components/Forms/FormContainer"
 
+import UseRef from "./components/UseRef/UseRef"
+
 import { Switch, Route } from "react-router-dom"
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
 					<Route path="/conditionals" exact component={ConditionalsContainer} />
 
 					<Route path="/forms" exact component={FormContainer} />
+
+					<Route path="/use-ref" exact component={UseRef} />
 
 					{/* <Route component={Error} /> */}
 				</Switch>

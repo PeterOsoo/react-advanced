@@ -20,6 +20,10 @@ const Home = () => {
 			<br />
 			<br />
 			<Link to="/forms">Forms </Link>
+			<br />
+			<br />
+			<br />
+			<Link to="/use-ref">Use Ref </Link>
 		</div>
 	)
 }
