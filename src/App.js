@@ -12,6 +12,8 @@ import FormContainer from "./components/Forms/FormContainer"
 
 import UseRef from "./components/UseRef/UseRef"
 
+import UseReducerContainer from "./components/UseReducer/UseReducerContainer"
+
 import { Switch, Route } from "react-router-dom"
 
 function App() {
@@ -30,6 +32,9 @@ function App() {
 					<Route path="/forms" exact component={FormContainer} />
 
 					<Route path="/use-ref" exact component={UseRef} />
+
+
+					<Route path="/use-reducer" exact component={UseReducerContainer} />
 
 					{/* <Route component={Error} /> */}
 				</Switch>
