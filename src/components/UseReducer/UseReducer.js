@@ -25,8 +25,16 @@ const reducer = (state, action) => {
 			modalContent: "Please enter valid name",
 		}
 	}
+
 	if (action.type === "CLOSE_MODAL") {
 		return { ...state, isModalOpen: false }
+	}
+
+	if (action.type === "REMOVE_ITEM") {
+		const newPeople = state.people.filter(
+			person => person.id !== action.payload
+		)
+		return { ...state, people: newPeople }
 	}
 	throw new Error("No matching action..")
 }
@@ -85,9 +93,15 @@ const UseReducer = () => {
 			</form>
 			{state.people.map(person => {
 				return (
-					<div className="" key={person.id}>
+					<div className="item" key={person.id}>
 						<h4>{person.name}</h4>
-						{/* <button></button> */}
+						<button
+							onClick={() =>
+								dispatch({ type: "REMOVE_ITEM", payload: person.id })
+							}
+						>
+							remove
+						</button>
 					</div>
 				)
 			})}
