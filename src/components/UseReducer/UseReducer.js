@@ -25,6 +25,10 @@ const reducer = (state, action) => {
 			modalContent: "Please enter valid name",
 		}
 	}
+	if (action.type === "CLOSE_MODAL") {
+		return { ...state, isModalOpen: false }
+	}
+	throw new Error("No matching action..")
 }
 
 const defaultState = {
@@ -51,10 +55,21 @@ const UseReducer = () => {
 			dispatch({ type: "NO_VALUE" })
 		}
 	}
+
+	// close Modal
+
+	const closeModal = () => {
+		dispatch({
+			type: "CLOSE_MODAL",
+		})
+	}
+
 	return (
 		<>
 			<h3>2. useReducer </h3>
-			{state.isModalOpen && <Modal modalContent={state.modalContent} />}
+			{state.isModalOpen && (
+				<Modal modalContent={state.modalContent} closeModal={closeModal} />
+			)}
 
 			<form action="" onSubmit={handleSubmit} className="form">
 				<div className="">
@@ -72,6 +87,7 @@ const UseReducer = () => {
 				return (
 					<div className="" key={person.id}>
 						<h4>{person.name}</h4>
+						{/* <button></button> */}
 					</div>
 				)
 			})}
