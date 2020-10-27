@@ -3,6 +3,8 @@ import "./App.css"
 
 import Home from "./pages/Home"
 
+import { Switch, Route } from "react-router-dom"
+
 import UseStateContainer from "./components/useState/UseStateContainer"
 import UseEffectContainer from "./components/useEffect/UseEffectContainer"
 
@@ -14,9 +16,9 @@ import UseRef from "./components/UseRef/UseRef"
 
 import UseReducerContainer from "./components/UseReducer/UseReducerContainer"
 
-import { Switch, Route } from "react-router-dom"
+import PropDrilling from "./components/PropDrilling/PropDrilling"
 
-function App() {
+const App = () => {
 	return (
 		<React.Fragment>
 			<div className="App">
@@ -33,8 +35,9 @@ function App() {
 
 					<Route path="/use-ref" exact component={UseRef} />
 
-
 					<Route path="/use-reducer" exact component={UseReducerContainer} />
+
+					<Route path="/prop-drilling" exact component={PropDrilling} />
 
 					{/* <Route component={Error} /> */}
 				</Switch>

@@ -28,6 +28,10 @@ const Home = () => {
 			<br />
 			<br />
 			<Link to="/use-reducer">Use Reducer </Link>
+			<br />
+			<br />
+			<br />
+			<Link to="/prop-drilling">Prop Drilling </Link>
 		</div>
 	)
 }
