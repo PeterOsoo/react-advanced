@@ -3,12 +3,34 @@ import React, { useState, useReducer } from "react"
 import { data } from "./data"
 import Modal from "./Modal"
 
-const reducer = (state, action) => {}
+// reducer action
+const reducer = (state, action) => {
+	// always return some kind of state
+	// console.log(state, action)
+	if (action.type === "ADD_ITEM") {
+		const newPeople = [...state.people, action.payload]
+		return {
+			...state,
+			people: newPeople,
+			isModalOpen: true,
+			modalContent: `Person was added!`,
+		}
+	}
+	// return state
+	// throw new Error("No matching action..")
+	if (action.type === "NO_VALUE") {
+		return {
+			...state,
+			isModalOpen: true,
+			modalContent: "Please enter valid name",
+		}
+	}
+}
 
 const defaultState = {
-	people: data,
-	isModalOpen: true,
-	modalContent: "Hello World",
+	people: [],
+	isModalOpen: false,
+	modalContent: "",
 }
 
 const UseReducer = () => {
@@ -17,14 +39,21 @@ const UseReducer = () => {
 
 	const handleSubmit = e => {
 		e.preventDefault()
-		console.log("submitted form")
+		// console.log("submitted form")
 		if (name) {
+			const newItem = {
+				id: new Date().getTime().toString(),
+				name,
+			}
+			dispatch({ type: "ADD_ITEM", payload: newItem })
+			setName("")
 		} else {
+			dispatch({ type: "NO_VALUE" })
 		}
 	}
 	return (
 		<>
-			<h3>2. useReducer - Refactor</h3>
+			<h3>2. useReducer </h3>
 			{state.isModalOpen && <Modal modalContent={state.modalContent} />}
 
 			<form action="" onSubmit={handleSubmit} className="form">
