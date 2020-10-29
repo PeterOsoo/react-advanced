@@ -5,8 +5,11 @@ import { Link } from "react-router-dom"
 const Home = () => {
 	return (
 		<div>
-			<h1>Home page</h1>
-
+			<h1>React Concepts</h1>
+			<br />
+			<br />
+			<hr />
+			<br />
 			<Link to="/use-state">Use State </Link>
 			<br />
 			<br />
@@ -32,6 +35,10 @@ const Home = () => {
 			<br />
 			<br />
 			<Link to="/prop-drilling">Prop Drilling </Link>
+			<br />
+			<br />
+			<br />
+			<Link to="/use-context">Use Context </Link>
 		</div>
 	)
 }

@@ -18,6 +18,8 @@ import UseReducerContainer from "./components/UseReducer/UseReducerContainer"
 
 import PropDrilling from "./components/PropDrilling/PropDrilling"
 
+import Context from "./components/UseContext/Context"
+
 const App = () => {
 	return (
 		<React.Fragment>
@@ -38,6 +40,8 @@ const App = () => {
 					<Route path="/use-reducer" exact component={UseReducerContainer} />
 
 					<Route path="/prop-drilling" exact component={PropDrilling} />
+
+					<Route path="/use-context" exact component={Context} />
 
 					{/* <Route component={Error} /> */}
 				</Switch>
