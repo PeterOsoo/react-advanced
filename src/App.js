@@ -20,6 +20,8 @@ import PropDrilling from "./components/PropDrilling/PropDrilling"
 
 import Context from "./components/UseContext/Context"
 
+import CustomContainer from "./components/CustomHooks/CustomContainer"
+
 const App = () => {
 	return (
 		<React.Fragment>
@@ -42,6 +44,8 @@ const App = () => {
 					<Route path="/prop-drilling" exact component={PropDrilling} />
 
 					<Route path="/use-context" exact component={Context} />
+
+					<Route path="/custom-hooks" exact component={CustomContainer} />
 
 					{/* <Route component={Error} /> */}
 				</Switch>

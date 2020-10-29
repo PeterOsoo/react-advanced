@@ -39,6 +39,10 @@ const Home = () => {
 			<br />
 			<br />
 			<Link to="/use-context">Use Context </Link>
+			<br />
+			<br />
+			<br />
+			<Link to="/custom-hooks">Custom Hooks </Link>
 		</div>
 	)
 }
