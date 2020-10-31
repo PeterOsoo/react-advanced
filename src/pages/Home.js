@@ -43,6 +43,10 @@ const Home = () => {
 			<br />
 			<br />
 			<Link to="/custom-hooks">Custom Hooks </Link>
+			<br />
+			<br />
+			<br />
+			<Link to="/prop-types">Prop Types </Link>
 		</div>
 	)
 }

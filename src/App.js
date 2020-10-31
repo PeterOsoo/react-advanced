@@ -22,6 +22,8 @@ import Context from "./components/UseContext/Context"
 
 import CustomContainer from "./components/CustomHooks/CustomContainer"
 
+import PropTypes from "./components/PropTypes/PropTypes"
+
 const App = () => {
 	return (
 		<React.Fragment>
@@ -46,6 +48,8 @@ const App = () => {
 					<Route path="/use-context" exact component={Context} />
 
 					<Route path="/custom-hooks" exact component={CustomContainer} />
+
+					<Route path="/prop-types" exact component={PropTypes} />
 
 					{/* <Route component={Error} /> */}
 				</Switch>
