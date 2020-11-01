@@ -2,6 +2,7 @@ import React from "react"
 import "./App.css"
 
 import Home from "./pages/Home"
+import Error from "./pages/Error"
 
 import { Switch, Route } from "react-router-dom"
 
@@ -51,7 +52,7 @@ const App = () => {
 
 					<Route path="/prop-types" exact component={PropTypes} />
 
-					{/* <Route component={Error} /> */}
+					<Route path='*' component={Error} />
 				</Switch>
 			</div>
 		</React.Fragment>
