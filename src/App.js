@@ -28,6 +28,8 @@ import PropTypes from "./components/PropTypes/PropTypes"
 import People from "./components/ReactRouter/People"
 import Person from "./components/ReactRouter/Person"
 
+import Optimization from "./components/Optimization/Optimization"
+
 const App = () => {
 	return (
 		<React.Fragment>
@@ -58,6 +60,8 @@ const App = () => {
 					<Route path="/people" component={People} />
 
 					<Route path="/person/:id" children={<Person />}></Route>
+
+					<Route path="/optimization" component={Optimization} />
 
 					<Route path="*" component={Error} />
 				</Switch>

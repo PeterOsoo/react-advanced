@@ -51,6 +51,13 @@ const Home = () => {
 			<br />
 			<br />
 			<Link to="/people">People </Link>
+			<br />
+			<br />
+			<br />
+			<Link to="/optimization">Optimization </Link>
+			<br />
+			<br />
+			<br />
 		</div>
 	)
 }
