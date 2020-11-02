@@ -47,6 +47,10 @@ const Home = () => {
 			<br />
 			<br />
 			<Link to="/prop-types">Prop Types </Link>
+			<br />
+			<br />
+			<br />
+			<Link to="/people">People </Link>
 		</div>
 	)
 }

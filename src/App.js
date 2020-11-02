@@ -25,6 +25,9 @@ import CustomContainer from "./components/CustomHooks/CustomContainer"
 
 import PropTypes from "./components/PropTypes/PropTypes"
 
+import People from "./components/ReactRouter/People"
+import Person from "./components/ReactRouter/Person"
+
 const App = () => {
 	return (
 		<React.Fragment>
@@ -52,7 +55,11 @@ const App = () => {
 
 					<Route path="/prop-types" exact component={PropTypes} />
 
-					<Route path='*' component={Error} />
+					<Route path="/people" component={People} />
+
+					<Route path="/person/:id" children={<Person />}></Route>
+
+					<Route path="*" component={Error} />
 				</Switch>
 			</div>
 		</React.Fragment>
